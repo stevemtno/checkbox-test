@@ -1,0 +1,46 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-checkbox/paper-checkbox.html">
+
+<!--
+Your element's description
+
+### Styling
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|--------
+`--mtz-seed-element-bg-color` | The background color | `--primary-background-color`
+
+@demo demo/index.html
+-->
+<dom-module id="mtz-seed-element">
+  <template>
+    <style>
+      :host {
+        background-color: var(--mtz-seed-element-bg-color, --primary-background-color);
+      }
+    </style>
+    <style is="custom-style">
+      .testing {
+        --paper-checkbox-size: 25px;
+        background: url("dealer-leasing-checkbox-sprite.png") no-repeat;
+      }
+      .testing:hover {
+        background-position: 0 -25px;
+      }
+    </style>
+
+    <div>mtz-seed-element</div>
+    <paper-checkbox class="testing">this is the checkbox label</paper-checkbox>
+    <!--<paper-checkbox class="green">this is the checkbox label</paper-checkbox>-->
+  </template>
+
+  <script>
+    Polymer({
+      is: 'mtz-seed-element',
+
+      properties: {}
+    });
+  </script>
+</dom-module>

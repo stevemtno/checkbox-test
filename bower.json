@@ -1,0 +1,22 @@
+{
+  "name": "mtz-seed-element",
+  "version": "0.1.0-0",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "mtz-seed-element.html",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4",
+    "paper-checkbox": "PolymerElements/paper-checkbox#^1.1.3"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.1",
+    "web-component-tester": "^4.2"
+  }
+}
